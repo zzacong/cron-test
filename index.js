@@ -14,7 +14,7 @@ async function main() {
   const channel = await client.channels.fetch(process.env.DISCORD_CHANNEL_ID)
   await channel.send(`Hello Discord`)
 
-  return
+  return process.exit()
 }
 
 main().catch(console.log)
